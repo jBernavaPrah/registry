@@ -53,6 +53,10 @@ python3 .github/scripts/check_append_only.py BASE HEAD
 python3 .github/scripts/check_admission.py BASE HEAD
 ```
 
+For each valid new archive, pull-request automation also uploads `registry-review-evidence`.
+It contains the complete safely extracted prior and proposed package trees, exhaustive inventories and checksums, and a Git binary diff made from those exact archive bytes.
+The first publication is diffed against an empty tree so every packaged source and configuration file is visible.
+
 The append-only check protects every introduced commit, while admission validates the final reviewed tree.
 
 The current `config.json`, `margo-config.toml`, and GitHub Pages deployment preserve the existing sparse-index and static archive serving path.

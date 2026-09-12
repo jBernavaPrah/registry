@@ -82,8 +82,27 @@ jobs:
           set -euo pipefail
           python3 .github/scripts/check_admission.py "$BASE" "$HEAD"
 
+      - name: Render exact archive review evidence
+        if: github.event_name == 'pull_request'
+        shell: bash
+        env:
+          BASE: ${{ steps.range.outputs.base }}
+          HEAD: ${{ steps.range.outputs.head }}
+        run: |
+          set -euo pipefail
+          python3 .github/scripts/render_review_evidence.py "$BASE" "$HEAD" review-evidence
+
+      - name: Upload archive review evidence
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: registry-review-evidence
+          path: review-evidence
+          if-no-files-found: ignore
+          retention-days: 30
+
       - name: Test admission tooling
         shell: bash
         run: |
           set -euo pipefail
-          python3 -m unittest discover -s .github/scripts -p 'test_check_admission.py'
+          python3 -m unittest discover -s .github/scripts -p 'test_*.py'
