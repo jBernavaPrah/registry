@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reject any change that is not a pure addition to the registry.
+"""Reject any change that is not an approved append-only registry change.
 
 Checked per introduced commit, not just between the endpoints: a push that adds
 a crate in one commit and removes it in the next has an empty net diff, and an
@@ -10,6 +10,8 @@ Rules, for every commit in (base, head]:
 * `crates/**` is add-only. No modify, delete, rename, or mode change.
 * Index files may only GROW, and the old bytes must be an exact prefix of the
   new bytes - so a line cannot be reordered, inserted mid-file, or rewritten.
+  The only exception is one existing record changing ``yanked`` from false to
+  true, with every other field and archive byte unchanged.
 * Every appended index record must be valid JSON, name the crate its path
   implies, carry a version never published before in that file, and point at a
   `.crate` blob that exists in the same tree with a matching checksum.
@@ -19,6 +21,7 @@ Rules, for every commit in (base, head]:
 
 Metadata files (`config.json`, the margo UI, this repository's own docs and
 workflows) are ordinary files and may change freely.
+Provenance and ownership records are immutable after their initial addition.
 """
 
 from __future__ import annotations
@@ -27,6 +30,8 @@ import hashlib
 import json
 import subprocess
 import sys
+
+from check_admission import canonical_archive_path, yanked_only_change
 
 METADATA_FILES = {
     "config.json",
@@ -37,6 +42,7 @@ METADATA_FILES = {
     ".gitignore",
 }
 METADATA_PREFIXES = ("assets/", ".github/")
+IMMUTABLE_METADATA_PREFIXES = ("provenance/", "ownership/")
 ALLOWED_MODES = {"100644", "100755"}
 
 
@@ -47,11 +53,15 @@ def git(*args: str) -> str:
 
 
 def is_index_path(path: str) -> bool:
-    if path.startswith("crates/"):
+    if path.startswith("crates/") or path.startswith(IMMUTABLE_METADATA_PREFIXES):
         return False
     if path in METADATA_FILES or path.startswith(METADATA_PREFIXES):
         return False
-    return True
+    parts = path.split("/")
+    return (
+        (len(parts) == 2 and parts[0] in {"1", "2", "3"} and bool(parts[1]))
+        or (len(parts) == 3 and all(parts))
+    )
 
 
 def blob(rev: str, path: str) -> bytes | None:
@@ -105,6 +115,15 @@ def check_commit(commit: str, problems: Problems) -> None:
             )
             continue
 
+        if new_path.startswith(IMMUTABLE_METADATA_PREFIXES):
+            if status[0] != "A":
+                problems.add(
+                    new_path,
+                    f"immutable registry metadata was changed in {commit[:9]}; "
+                    "provenance and ownership records cannot be rewritten",
+                )
+            continue
+
         if not is_index_path(new_path):
             continue
 
@@ -125,12 +144,18 @@ def check_commit(commit: str, problems: Problems) -> None:
         if old_bytes is None:
             old_bytes = b""
 
-        if not new_bytes.startswith(old_bytes):
+        if not new_bytes.startswith(old_bytes) and not yanked_only_change(
+            old_bytes, new_bytes
+        ):
             problems.add(
                 new_path,
                 f"the index file was rewritten in {commit[:9]}; existing bytes "
-                "must remain an exact prefix, so records can only be appended",
+                "must remain an exact prefix, except for one reviewed false-to-true "
+                "yanked update",
             )
+            continue
+
+        if not new_bytes.startswith(old_bytes):
             continue
 
         appended = new_bytes[len(old_bytes):]
@@ -165,8 +190,7 @@ def check_commit(commit: str, problems: Problems) -> None:
                 )
             existing_versions.add(version)
 
-            prefix = crate_name[:2].lower(), crate_name[2:4].lower()
-            crate_path = f"crates/{prefix[0]}/{prefix[1]}/{crate_name}/{version}.crate"
+            crate_path = canonical_archive_path(crate_name, version)
             artifact = blob(commit, crate_path)
             if artifact is None:
                 problems.add(
