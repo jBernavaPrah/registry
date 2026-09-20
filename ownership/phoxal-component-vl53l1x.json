@@ -1,0 +1,8 @@
+{
+  "kind": "component",
+  "name": "phoxal-component-vl53l1x",
+  "owners": [
+    "jBernavaPrah"
+  ],
+  "reserved": true
+}
