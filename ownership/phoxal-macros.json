@@ -1,0 +1,8 @@
+{
+  "kind": "proc-macro",
+  "name": "phoxal-macros",
+  "owners": [
+    "jBernavaPrah"
+  ],
+  "reserved": true
+}
