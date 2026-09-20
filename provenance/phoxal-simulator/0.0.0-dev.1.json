@@ -1,0 +1,292 @@
+{
+  "archive": "crates/ph/ox/phoxal-simulator/0.0.0-dev.1.crate",
+  "archive_sha256": "947eca4fa90282d6c87bf533919a8f33d0dc08dd038fa51a0732cab615372481",
+  "assets": [
+    {
+      "path": "COMMERCIAL.md",
+      "sha256": "ee2e17db157c0d528cbf78da35770f839063ab4b5f1fe4e5b95b161cb9457a6f",
+      "size": 1191
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "845f649efae4cbebced4c07e64655f5c350dc7687f92e646f687ee0c1fc1e712",
+      "size": 1860
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "ccaac05953e96dc5f43a9d94c0ec396539dab7a855b375c8452ce7412a81b6de",
+      "size": 174859
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "ef6d18bd0ddf5303843df523e667db87c6b50b484f480ee09d09e2c9bdc43a89",
+      "size": 3522
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "b39f2494e0e98c1401840510ae3a1e9a389ceff9df19fc644d75950b6a1eaf41",
+      "size": 3158
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b",
+      "size": 34522
+    },
+    {
+      "path": "README.md",
+      "sha256": "807796f80cd9f956cdf3e96a282c822344147ca0d42426f45aa01e92ceaf8004",
+      "size": 6548
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "sha256": "d2667b0ce584c9e6e60bf3f87507693c359448330547450c03ec182a661a7d26",
+      "size": 421
+    },
+    {
+      "path": "src/authority.rs",
+      "sha256": "c46b066d25501c758a789a1102a54736632b19dfa403dfb4743ec547c2c86999",
+      "size": 28233
+    },
+    {
+      "path": "src/authority/tests.rs",
+      "sha256": "c93084840b87c801ec0d16489dd5d2f9eb84e1fb863367bd41f093df7deca883",
+      "size": 17671
+    },
+    {
+      "path": "src/bindings.rs",
+      "sha256": "3515a1bbe78fbeca35b3e5b2604f8d50f21fdca5412a3dca221b197a9ae16617",
+      "size": 30145
+    },
+    {
+      "path": "src/bundle.rs",
+      "sha256": "180d8830571a42e83e465c6eaee802cb7357c6c48e24421ebc030cb7ff0bbd29",
+      "size": 15944
+    },
+    {
+      "path": "src/cadence.rs",
+      "sha256": "db1970553ec3c57653703395ae34be51029824836cdef928881bc0d433835dbb",
+      "size": 2584
+    },
+    {
+      "path": "src/composition.rs",
+      "sha256": "8a3ecba9e61f58c026d6897670818bfe67c6b0da6638d0bef403e4a27d7f79ea",
+      "size": 3657
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "6c1dd3125614ddc8933f89902f1197235090850d44380070c26b00840fd5f4c9",
+      "size": 6840
+    },
+    {
+      "path": "src/desktop/mod.rs",
+      "sha256": "dc02a79e8d68ef6de4dd42138e56d405de11b03eb03a9ce1512b7c28ecc851ff",
+      "size": 8731
+    },
+    {
+      "path": "src/desktop/viewport.rs",
+      "sha256": "50b528965a815ff8c2891a1efa26102b868ec8525f0fd2cef0ac906f352e44ac",
+      "size": 1622
+    },
+    {
+      "path": "src/execution.rs",
+      "sha256": "352a2fb3af1b433eb1da1b569bffe7dc416a1cbabbead0aa4f82aa11e0a8cbd6",
+      "size": 6323
+    },
+    {
+      "path": "src/georeference.rs",
+      "sha256": "9f6f296dcb9a6d5547005c8bf672bf2ddb510e134287c2edfe092518eb4d24ee",
+      "size": 2186
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "7732dbf0bb76509a9f98db28b99591b10530bdf0a2b676fbb454adb7f3512dba",
+      "size": 990
+    },
+    {
+      "path": "src/mujoco/artifact.rs",
+      "sha256": "0f3be7925312892340ee25489ac81df5f6fe3cc682e64ade4d0f7b0e76136054",
+      "size": 45634
+    },
+    {
+      "path": "src/mujoco/composition.rs",
+      "sha256": "13576099948984bebb81d94089432ae20d42fb82064f7945fc0108ac37aa4019",
+      "size": 49248
+    },
+    {
+      "path": "src/mujoco/error.rs",
+      "sha256": "63aac6dc5caf777905b04e1c4d5e7ecbb0e9bd7825f8ff0462f07e0947cc1abe",
+      "size": 9460
+    },
+    {
+      "path": "src/mujoco/mod.rs",
+      "sha256": "7ffcdcfa7083effff0003fab6c571f9a82e65bac613dab4a5e07d26fcd13fe25",
+      "size": 2261
+    },
+    {
+      "path": "src/mujoco/model.rs",
+      "sha256": "8bcfb49e4291e6f432e420a2a2e7607be63666b3bfdf7291541a0eb34041e34d",
+      "size": 33584
+    },
+    {
+      "path": "src/mujoco/provider.rs",
+      "sha256": "35953c6df04305ae187c42ad494ef229527ef2ff2f19c110c1d5cd2e309d624e",
+      "size": 25964
+    },
+    {
+      "path": "src/mujoco/scene.rs",
+      "sha256": "463b114ecffb8551dc5eefd1a57a6b9a660a7cafea406ea5d6451e8b224cce1f",
+      "size": 36479
+    },
+    {
+      "path": "src/mujoco/scene/cgl.rs",
+      "sha256": "66c684c704feeca214e7df133dfbea5ef57487fb4035610a1dda2305a3c9c5d2",
+      "size": 2904
+    },
+    {
+      "path": "src/mujoco/scene/egl.rs",
+      "sha256": "1b6ec7f0e60f0d058149b32028b1d98589fc9e8950faea7d7a5bcc951eaa4bcb",
+      "size": 2964
+    },
+    {
+      "path": "src/mujoco/scene/renderer.rs",
+      "sha256": "1db2d997c38cd29ff4ef756100f3ce4e3907479179ec22e308685b3f73595a12",
+      "size": 5298
+    },
+    {
+      "path": "src/mujoco/scene/rendering.rs",
+      "sha256": "63c13519c4401ad2a436daf8fa72a30d7a4552760978276595d35529ab48a40b",
+      "size": 6723
+    },
+    {
+      "path": "src/mujoco/tests/component_models.rs",
+      "sha256": "f0dbb946e837f816745502f75da3ded606583978ca843b5be9d626f2391ad646",
+      "size": 17759
+    },
+    {
+      "path": "src/mujoco/tests/fixtures/composition/component.xml",
+      "sha256": "54957a631b24056c0a5a02f0c9a3c924022d4981add7e72ef4218d60c28c4a18",
+      "size": 263
+    },
+    {
+      "path": "src/mujoco/tests/fixtures/composition/scene.xml",
+      "sha256": "7094677276b505c3343db6056e63f395d0bdb02def294199a2f97cb0c69a3aa8",
+      "size": 216
+    },
+    {
+      "path": "src/mujoco/tests/fixtures/rendering/scene.xml",
+      "sha256": "a2dbde139878f7b768796856c84ddcb91e0c3fd703ceca8acff6ced6d2714519",
+      "size": 318
+    },
+    {
+      "path": "src/mujoco/tests/rendering.rs",
+      "sha256": "3d789e0cabe69bb532bcb76888eb83c105f8359fd4990ea77b08f4e1e41b0d0f",
+      "size": 4111
+    },
+    {
+      "path": "src/native_provider/binding.rs",
+      "sha256": "81812fcfce500e89d3f2bdad53d9eeda4df669e9dae890dadd51f2eda58eecd8",
+      "size": 21703
+    },
+    {
+      "path": "src/native_provider/camera.rs",
+      "sha256": "5ec61f2652da380b30dbf9306a4e07b6208a746b5183b9f24dac33d7107ba53a",
+      "size": 6938
+    },
+    {
+      "path": "src/native_provider/config.rs",
+      "sha256": "b070aa6b38686d27042c0f5195e48237bf0ea9eb2640152d08d08d20e7f2090d",
+      "size": 15106
+    },
+    {
+      "path": "src/native_provider/geodesy.rs",
+      "sha256": "7d3e996b9c6af2ca0517c697593ff5f441301a88786105188b5986e812904c47",
+      "size": 8107
+    },
+    {
+      "path": "src/native_provider/mod.rs",
+      "sha256": "2e5792cd9e5b5737fe654e1945ae9bf97877c0a3a5e0c5c72fac67216aa6dd9b",
+      "size": 415
+    },
+    {
+      "path": "src/native_provider/observations.rs",
+      "sha256": "96349d89e7720e28e879bb43c304dc8547fe4d0db6edb4311c797de904380ceb",
+      "size": 16182
+    },
+    {
+      "path": "src/native_provider/runtime.rs",
+      "sha256": "2310a7ab25c7ec30f07ed1838c1bb891b065ee78979d91844c33ae5970ec8ae8",
+      "size": 18103
+    },
+    {
+      "path": "src/native_provider/tests.rs",
+      "sha256": "65d9382e6d796252a964f585c04d2a86fbd0afa6bfe3e699ec77239ec02f30b9",
+      "size": 6486
+    },
+    {
+      "path": "src/native_provider/tests/numerical.rs",
+      "sha256": "b9150e02f65e9875f8b7dfaeca153eff601f284f11de6610f87ab5247a178354",
+      "size": 17173
+    },
+    {
+      "path": "src/observations.rs",
+      "sha256": "a3d84bfd20c0a65d751b2344cdd18fe40b92304de960a9da339637310cfcebc2",
+      "size": 3895
+    },
+    {
+      "path": "src/remote.rs",
+      "sha256": "88eea126cd4bc8d90fa611d867b2e15b3c85f844742bd62072d48248e0814973",
+      "size": 50651
+    },
+    {
+      "path": "src/runtime.rs",
+      "sha256": "cb8b3f3d94e9e13c54324749250fb53fb185ea0d22d9a4bf36bbd5f836685ca1",
+      "size": 10600
+    },
+    {
+      "path": "src/tests.rs",
+      "sha256": "ad80720b5b2a97a5cf8a91dd44141d673972ce00fa679a1d7e35fa6de2ee2c4c",
+      "size": 4912
+    },
+    {
+      "path": "tests/fixtures/motor.xml",
+      "sha256": "e721c0a67e5596152900929b1d35862d7a4ee45df34bcc437104cf64c41bad49",
+      "size": 317
+    }
+  ],
+  "kind": "simulator",
+  "name": "phoxal-simulator",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "fddb6dd07d3363ac2e5eef0ad1a28aa14069c62701b6d224207c3ca4cb797019",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/simulator.git",
+    "revision": "2d6cd1bc582bebe31ba7e61014eca1d396629fd9",
+    "staged_files": [
+      {
+        "bytes": 285,
+        "path": ".cargo/config.local.toml",
+        "sha256": "62df730bf8c507770f10accb8ae27891053f89d5c6e44940698c2ef60a137a0b"
+      },
+      {
+        "bytes": 112,
+        "path": ".cargo/config.toml",
+        "sha256": "858b2a28b1cb809b88e1ad2df7091b428d2376633f47a34a3ef8e69ac1ee3252"
+      },
+      {
+        "bytes": 174859,
+        "path": "Cargo.lock",
+        "sha256": "ccaac05953e96dc5f43a9d94c0ec396539dab7a855b375c8452ce7412a81b6de"
+      },
+      {
+        "bytes": 3158,
+        "path": "Cargo.toml",
+        "sha256": "b39f2494e0e98c1401840510ae3a1e9a389ceff9df19fc644d75950b6a1eaf41"
+      }
+    ],
+    "subdirectory": ""
+  },
+  "version": "0.0.0-dev.1"
+}
