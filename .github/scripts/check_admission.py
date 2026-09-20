@@ -87,6 +87,19 @@ class AdmissionError(ValueError):
     """A package or registry record violates an admission rule."""
 
 
+def archive_inventory(files: Mapping[str, bytes]) -> list[dict[str, Any]]:
+    """Return deterministic review metadata for extracted archive files."""
+
+    return [
+        {
+            "path": path,
+            "size": len(contents),
+            "sha256": hashlib.sha256(contents).hexdigest(),
+        }
+        for path, contents in sorted(files.items())
+    ]
+
+
 @dataclass(frozen=True)
 class Problem:
     path: str
@@ -105,14 +118,7 @@ class ArchiveReport:
 
     @property
     def inventory(self) -> list[dict[str, Any]]:
-        return [
-            {
-                "path": path,
-                "size": len(contents),
-                "sha256": hashlib.sha256(contents).hexdigest(),
-            }
-            for path, contents in sorted(self.files.items())
-        ]
+        return archive_inventory(self.files)
 
 
 def canonical_index_path(name: str) -> str:
@@ -324,8 +330,10 @@ def _validate_kind_shape(
         raise AdmissionError(f"{path} {kind} packages must expose a bin target")
 
 
-def inspect_archive(archive: bytes, expected_name: str, expected_version: str) -> ArchiveReport:
-    """Inspect one Cargo archive without executing any submitted code."""
+def extract_archive_files(
+    archive: bytes, expected_name: str, expected_version: str
+) -> dict[str, bytes]:
+    """Safely extract regular files from one identity-bound Cargo archive."""
 
     expected_name = _validate_name(expected_name, "archive name")
     expected_version = _validate_version(expected_version, "archive version")
@@ -381,6 +389,14 @@ def inspect_archive(archive: bytes, expected_name: str, expected_version: str) -
             if len(contents) != member.size:
                 raise AdmissionError(f"archive member {relative!r} changed while reading")
             files[relative] = contents
+
+    return files
+
+
+def inspect_archive(archive: bytes, expected_name: str, expected_version: str) -> ArchiveReport:
+    """Inspect one current Cargo archive without executing submitted code."""
+
+    files = extract_archive_files(archive, expected_name, expected_version)
 
     manifest_bytes = files.get("Cargo.toml")
     if manifest_bytes is None:
