@@ -1,0 +1,147 @@
+{
+  "archive": "crates/ph/ox/phoxal-component-ddsm115/0.0.0-dev.1.crate",
+  "archive_sha256": "f03b373b44ff64f17cf8af08454081f4dea69ec5670d47062373fcdee2cf71e9",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "f8407244586e79149297b1848df46bdc2b3758ca27dab86e4c18bb705268fe08",
+      "size": 106777
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "967756bf5ff89ac5ae61838b98cb26c250effc2aec957c3dc5074a9460168ff6",
+      "size": 2307
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "fc7948edca9b1dd660576a1bbbdb0ee6c8477b7aa6914eabf8f567b4ad358658",
+      "size": 1227
+    },
+    {
+      "path": "assets/meshes/ddsm115.glb",
+      "sha256": "701e51f76744f07199139fc953f532949c1d4de9d73c001031703c1b2a24dd3c",
+      "size": 225124
+    },
+    {
+      "path": "assets/meshes/ddsm115.obj",
+      "sha256": "a00f96d99c8ae4629166f9a79b61d2f9901febb84fd035e7f3351d2b0de4d4d0",
+      "size": 742398
+    },
+    {
+      "path": "assets/meshes/motorized_wheel.mtl",
+      "sha256": "4d2a5ebd8e97f2961281babfd01da515709032bb3023e765a60515e08c698793",
+      "size": 153
+    },
+    {
+      "path": "build.rs",
+      "sha256": "d25d954f3871ad24c07a3e8670423c55e781654ab1fd107e13aabacada52a4c8",
+      "size": 395
+    },
+    {
+      "path": "component.yaml",
+      "sha256": "59e129a96c5ff31c615fcc90e3112fb3e4a3a18d032be19a907a4d1a65b6ec8b",
+      "size": 580
+    },
+    {
+      "path": "model.xml",
+      "sha256": "acb5bcbfbc31a5cf5333f4d3f264d231931e8dc001b2a40a360d7bbea93a4e10",
+      "size": 1141
+    },
+    {
+      "path": "proto/phoxal/component/ddsm115/v1/ddsm115.proto",
+      "sha256": "0c63621d08a362baabb1dd3fc0d79a1587054de51bb8457f372ea72492e5893e",
+      "size": 322
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "8faf73acb4ca30673337cad60a59b85760d7e17aec4990583cd10f92d0681529",
+      "size": 225
+    },
+    {
+      "path": "src/inputs.rs",
+      "sha256": "cd5faf5f2d263e488a7a8db7d70721041891bc0fe1309cf266b7d630f01ba324",
+      "size": 306
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "4869c9f9d3c6b7821437fb893330d40c64b2aa50009f420fec527d8704094c00",
+      "size": 432
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "4b7ca3af7f07d1327cc443fd6f80e8f2947325ff0bdf13ebc78ed73267606261",
+      "size": 130
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "c80f5ec245ad0030f5fcf7044d769cb11ac13ade69ef0cda40ee982f0f33537f",
+      "size": 438
+    },
+    {
+      "path": "src/runtime.rs",
+      "sha256": "d496dd6a320a84dafb0b212094420e1542fe6f7b3742b6f1ecf03c1fc39025d2",
+      "size": 3749
+    }
+  ],
+  "kind": "component",
+  "name": "phoxal-component-ddsm115",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "2659a8959e8ace6a955472a5a9ac5a080c98363f0360fc49e1418797b0e80375",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "dff9d8bb0d0aa4f22d81e982c3bcee859ec6f695",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "868ffc079a06ad2967dffcee5a4aaf8da936611bb9e42d831466e3234beb8412"
+      },
+      {
+        "bytes": 4125,
+        "path": "Cargo.toml",
+        "sha256": "592802123f35d527bb3f84721789749ef7dd854506751ccf07067d678e56838b"
+      },
+      {
+        "bytes": 1227,
+        "path": "components/ddsm115/Cargo.toml",
+        "sha256": "fc7948edca9b1dd660576a1bbbdb0ee6c8477b7aa6914eabf8f567b4ad358658"
+      },
+      {
+        "bytes": 7814,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "d0905ff9ae5a86b1d8850ca471af17143e6df8e37a3ed1e352aac0c2102a55cb"
+      },
+      {
+        "bytes": 1110,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "3c9b409356c978b2df564075cd7153253284686aa056198ee7c8dfcdf6eec5f8"
+      },
+      {
+        "bytes": 1011,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "325efff1217f0f1d10bef3dc49752d78e4b5143db78ed787e4df665258eed67d"
+      },
+      {
+        "bytes": 1094,
+        "path": "services/kinematics/Cargo.toml",
+        "sha256": "1baef842ff69aefaa4812983b2acdabd3c754dc7cd8487b4d06d0a57be4d56e9"
+      },
+      {
+        "bytes": 1153,
+        "path": "services/motion/Cargo.toml",
+        "sha256": "1c7346b342e09b789f4ab1bc9b03566566efee25e1a0ab1d284baf332b07350c"
+      }
+    ],
+    "subdirectory": "components/ddsm115"
+  },
+  "version": "0.0.0-dev.1"
+}
