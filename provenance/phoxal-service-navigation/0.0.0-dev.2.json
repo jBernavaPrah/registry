@@ -1,0 +1,127 @@
+{
+  "archive": "crates/ph/ox/phoxal-service-navigation/0.0.0-dev.2.crate",
+  "archive_sha256": "a045da9d034b13e0b03d29813bad9a9191c31203adf50a0b37091e48c762c0f1",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "c131da63e151996681ecfa4ea88de23a1fe4cb8912169117c9c2ad1089a10ef7",
+      "size": 107106
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "a7f251e39105173afec71a347280255c0c8503eed9b9141c4dadc5fc68eaaa2d",
+      "size": 2667
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "7c3e5ec01b83e4adb5d39936f1469fe6cc76e341d58be8b7ef5b6f799d62de4e",
+      "size": 1307
+    },
+    {
+      "path": "build.rs",
+      "sha256": "f23aac38a031c8fef57835ebe26a0632afd9dc90e83ee1464879c508c0af2f6f",
+      "size": 146
+    },
+    {
+      "path": "lib.rs",
+      "sha256": "5c097728eb351c6aabe6e77383dcb79906c0899c7fe1a906b9e0881814af779a",
+      "size": 10920
+    },
+    {
+      "path": "proto/phoxal/navigation/v1/navigation.proto",
+      "sha256": "ac9f5faff8f458a5cf3d7510c0a7d30087b5e19ccb109b17ba0da0ac4c320bc8",
+      "size": 2560
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "7101ee6bbbc36fcd2b901f703b6b230d5d36afd981f8fe37930e95e4e5aeee87",
+      "size": 838
+    },
+    {
+      "path": "src/inputs.rs",
+      "sha256": "e797a50e97ef1d337939d956050691e3b4de363fa15074ce3914fedfe16c3fd1",
+      "size": 836
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "157ced502913b2704daf7cf18db7a1893609b8bb1bb9a5aa83145cc11d3e4ba9",
+      "size": 133
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "e71fa43206abf559355a0113a4670f63c8675e6f345c701868c2a0392fb96e87",
+      "size": 642
+    },
+    {
+      "path": "src/runtime/mod.rs",
+      "sha256": "698fc84f32abf0a9c2739c77896e398842517d6d44c0885aa4d423da7f259b60",
+      "size": 22810
+    }
+  ],
+  "kind": "service",
+  "name": "phoxal-service-navigation",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "b860c9a643b4942a6767da93152e759911271b71b34e382af1f8c288bd158f89",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4126,
+        "path": "Cargo.toml",
+        "sha256": "f14d9f7bfd5ed94a399f107329c923ee0a3d2af64b4bc0644c4608cdab882bf3"
+      },
+      {
+        "bytes": 7790,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "ccc36399225e3df7daa78843e8f508b994483e98674446392b37264f9fc1a6c7"
+      },
+      {
+        "bytes": 1066,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "03033a2b6c824d5a885134de4ef0f22c64a97ffcb27efcbd13ff8f6b2cb02d81"
+      },
+      {
+        "bytes": 1522,
+        "path": "phoxal/cargo/Cargo.toml",
+        "sha256": "1a99298375d4960ec270aa4e422f3235680b4c13f3c9717457a25dc0c3260622"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      },
+      {
+        "bytes": 1050,
+        "path": "services/kinematics/Cargo.toml",
+        "sha256": "9f215331d8658a755f67821f15eaf6fc4e90214d48f00966684293da2c066c04"
+      },
+      {
+        "bytes": 1307,
+        "path": "services/navigation/Cargo.toml",
+        "sha256": "7c3e5ec01b83e4adb5d39936f1469fe6cc76e341d58be8b7ef5b6f799d62de4e"
+      },
+      {
+        "bytes": 1115,
+        "path": "services/world/Cargo.toml",
+        "sha256": "33940284ea3e713977b596060a5a141db6ea494ad483d6a8821ef5f0bec4e332"
+      }
+    ],
+    "subdirectory": "services/navigation"
+  },
+  "version": "0.0.0-dev.2"
+}
