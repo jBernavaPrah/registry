@@ -258,7 +258,11 @@ def _validate_dependencies(manifest: Mapping[str, Any], path: str) -> dict[str, 
                 raise AdmissionError(
                     f"{path} dependency {name!r} retains a path/git source"
                 )
-            registry = spec.get("registry")
+            if "registry" in spec and "registry-index" in spec:
+                raise AdmissionError(
+                    f"{path} dependency {name!r} declares both registry forms"
+                )
+            registry = spec.get("registry-index", spec.get("registry"))
             if registry is not None and not isinstance(registry, str):
                 raise AdmissionError(
                     f"{path} dependency {name!r} has a non-string registry"
@@ -520,7 +524,7 @@ def validate_index_record(
         if registry not in {None, PHOXAL_INDEX, CRATES_IO_INDEX}:
             raise AdmissionError(f"{index_path} dependency {number} registry is invalid")
         if strict_internal_dependencies and dep["name"].startswith("phoxal"):
-            if registry != PHOXAL_INDEX:
+            if registry is not None:
                 raise AdmissionError(
                     f"{index_path} internal dependency {dep['name']!r} is not same-registry"
                 )

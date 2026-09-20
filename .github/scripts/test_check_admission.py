@@ -125,6 +125,34 @@ class ArchiveTests(unittest.TestCase):
             hashlib.sha256(report.files[report.inventory[0]["path"]]).hexdigest(),
         )
 
+    def test_normalized_internal_dependency_uses_registry_index(self) -> None:
+        dependencies = admission._validate_dependencies(
+            {
+                "dependencies": {
+                    "phoxal-build": {
+                        "version": "=0.0.0-dev.1",
+                        "registry-index": admission.PHOXAL_INDEX,
+                    }
+                }
+            },
+            "Cargo.toml",
+        )
+        self.assertIn("phoxal-build", dependencies)
+
+    def test_normalized_internal_dependency_rejects_crates_io(self) -> None:
+        with self.assertRaisesRegex(admission.AdmissionError, "must use"):
+            admission._validate_dependencies(
+                {
+                    "dependencies": {
+                        "phoxal-build": {
+                            "version": "=0.0.0-dev.1",
+                            "registry-index": admission.CRATES_IO_INDEX,
+                        }
+                    }
+                },
+                "Cargo.toml",
+            )
+
     def test_archive_identity_must_match_path(self) -> None:
         with self.assertRaisesRegex(admission.AdmissionError, "identity|outside"):
             admission.inspect_archive(make_archive(name="other"), "example-service", "0.1.0")
@@ -183,7 +211,7 @@ class RecordTests(unittest.TestCase):
                 "optional": False,
                 "default_features": True,
                 "kind": "normal",
-                "registry": admission.PHOXAL_INDEX,
+                "registry": None,
             }
         ]
         admission.validate_index_record(record, "ex/am/example-service", archive)
