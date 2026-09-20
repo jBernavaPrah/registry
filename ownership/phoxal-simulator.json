@@ -1,0 +1,8 @@
+{
+  "kind": "simulator",
+  "name": "phoxal-simulator",
+  "owners": [
+    "jBernavaPrah"
+  ],
+  "reserved": true
+}
