@@ -1,0 +1,132 @@
+{
+  "archive": "crates/ph/ox/phoxal-service-kinematics/0.0.0-dev.2.crate",
+  "archive_sha256": "25580af7201ed9705afc13836bc353da23c2afd96eda11986fd6d1c2de62f0f8",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "0bd3f6b48c86217043ed1cc9bc03abaf7985e0b5c366f5aa8e229fa51e261c59",
+      "size": 106498
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "358b5a391f1d7ed5ad50b599d632f904543d002c15d5df05401d7929e7b08934",
+      "size": 2104
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "9f215331d8658a755f67821f15eaf6fc4e90214d48f00966684293da2c066c04",
+      "size": 1050
+    },
+    {
+      "path": "README.md",
+      "sha256": "4b9f2a68653239ebb4b5ce3dab9c40f615972041ae05be6e1cddb96b28ce9153",
+      "size": 1467
+    },
+    {
+      "path": "build.rs",
+      "sha256": "ee8363a77a9ed0f9606f57c89628e2d08b3ea61b5d3e9130632286cc9690b4fb",
+      "size": 391
+    },
+    {
+      "path": "lib.rs",
+      "sha256": "7c2613d467b152bed6366546071d9c967e544d97b741a7a2d15042d9f4d03dfe",
+      "size": 8823
+    },
+    {
+      "path": "proto/phoxal/kinematics/v1/kinematics.proto",
+      "sha256": "1258c904950fd0378a319539419047811f7d3d8b1e1655d8139beb828e36d6df",
+      "size": 2165
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "ec31911d589ad600353fd10dc88fd33e20873e842faa1e441abae621161ddce8",
+      "size": 4779
+    },
+    {
+      "path": "src/inputs.rs",
+      "sha256": "fd2eb3c552c774b903a0cf6f0a3d55dadae0f5f5d5c5a068702eeeaee073c484",
+      "size": 351
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "90077c0c9ca7dec0086870acf3d2289b8f109f130ba1ab087b562529a641fd94",
+      "size": 501
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "5c4936572629dcd8fb6e1c16968262eb8ce0ae5aab1db698c1934cb144703da6",
+      "size": 441
+    },
+    {
+      "path": "src/runtime/measurements.rs",
+      "sha256": "de00f49f1245a60d4faf6b23bafb54c75ffe9599fcb81ee35f7590304d01417c",
+      "size": 3975
+    },
+    {
+      "path": "src/runtime/mod.rs",
+      "sha256": "a2d264fc6fe4e7c26a53bd959deadb4f9d5e2ccc532a9809282a81226f94a9df",
+      "size": 8794
+    },
+    {
+      "path": "src/runtime/tests.rs",
+      "sha256": "17a7c4065afa8fda129caf1c5bfd77f3116c22bd2e05c80d47f93b360c3a22ed",
+      "size": 7503
+    }
+  ],
+  "kind": "service",
+  "name": "phoxal-service-kinematics",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "6a6229b78aab7490f8a2ef4bef17f969dbb3ebe46dfa4f0c9afb14dce2ccad66",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4126,
+        "path": "Cargo.toml",
+        "sha256": "b7af2c73657f4f7f0e3e5506a5584504e5fdd1e5ed524836a477775a81ba5563"
+      },
+      {
+        "bytes": 7790,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "ccc36399225e3df7daa78843e8f508b994483e98674446392b37264f9fc1a6c7"
+      },
+      {
+        "bytes": 1066,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "03033a2b6c824d5a885134de4ef0f22c64a97ffcb27efcbd13ff8f6b2cb02d81"
+      },
+      {
+        "bytes": 1522,
+        "path": "phoxal/cargo/Cargo.toml",
+        "sha256": "1a99298375d4960ec270aa4e422f3235680b4c13f3c9717457a25dc0c3260622"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      },
+      {
+        "bytes": 1050,
+        "path": "services/kinematics/Cargo.toml",
+        "sha256": "9f215331d8658a755f67821f15eaf6fc4e90214d48f00966684293da2c066c04"
+      }
+    ],
+    "subdirectory": "services/kinematics"
+  },
+  "version": "0.0.0-dev.2"
+}
