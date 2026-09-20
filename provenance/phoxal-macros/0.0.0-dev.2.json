@@ -1,0 +1,127 @@
+{
+  "archive": "crates/ph/ox/phoxal-macros/0.0.0-dev.2.crate",
+  "archive_sha256": "4c131eb2108f30212720d6c3438c350a164716098a400a8eda2cddc264ae319e",
+  "assets": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "7d05198a81a03abbaaec34aa7224c86b440bdb59210fd33fb84cf1822113fcd7",
+      "size": 12669
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "8959b96e034a034ca496d2e5c05bfb365fab5960e1c12280e0b10d5622f237f1",
+      "size": 7075
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "70761d1048f025bbbe3de3fc86e88910801ad49af9d9a63fd7d8267daca14023",
+      "size": 1565
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0",
+      "size": 964
+    },
+    {
+      "path": "src/authoring.rs",
+      "sha256": "a27f220fbf1ba33e1499bed5c6bbff3e04c85f6919f452145dcd2e9f6292c056",
+      "size": 6589
+    },
+    {
+      "path": "src/inputs.rs",
+      "sha256": "321f77e061422fe96f64404e598e82b4b88a12558e91f906daacb61921b348d8",
+      "size": 76019
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "46fc7843d8db009822c55c121de669c62aa667146efa8b4b604aa8e8129e4582",
+      "size": 2883
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "11bab1c6ca2a6cd06ec2a073d9eaf4634851608fac1bb157794599137b406d82",
+      "size": 59202
+    },
+    {
+      "path": "src/runtime.rs",
+      "sha256": "a196e58a8df3a362d09c62626f35146d69c99d5638cd53c05795c9364b8fee42",
+      "size": 6723
+    },
+    {
+      "path": "src/scenario.rs",
+      "sha256": "677e96ddbf24b3bf0d686d567d2db67c8785d95e01b4fca785c9645eb4788dd7",
+      "size": 5973
+    },
+    {
+      "path": "tests/trybuild.rs",
+      "sha256": "f5217381a3d4e942a8f9e4ced995fff0fcd204193573da494b46ed92f3ad5af5",
+      "size": 117
+    },
+    {
+      "path": "tests/trybuild/fail/runtime_invalid_input.rs",
+      "sha256": "2182b22e363f74d99aadd555efb6165052ede357a0623fa97dd3521f9a2db691",
+      "size": 73
+    },
+    {
+      "path": "tests/trybuild/fail/runtime_invalid_input.stderr",
+      "sha256": "4f48b931afc1e3605142fbb98643b8e8d0bc46507931960f4e29666863af8c7b",
+      "size": 176
+    },
+    {
+      "path": "tests/trybuild/fail/runtime_missing_deadline.rs",
+      "sha256": "0c929c32536b70b406b3c26aa365f9f7cceea2adde288669862e77df3abe5351",
+      "size": 208
+    },
+    {
+      "path": "tests/trybuild/fail/runtime_missing_deadline.stderr",
+      "sha256": "2a4b288b3084dc6cb9909f8d628dcff6d8d1909de558742df18487bfa1a35c49",
+      "size": 376
+    },
+    {
+      "path": "tests/trybuild/fail/runtime_output_missing_port.rs",
+      "sha256": "420cf67199f95e125ec5546817d97317b03e3effa8a9894971b449fae4b57857",
+      "size": 140
+    },
+    {
+      "path": "tests/trybuild/fail/runtime_output_missing_port.stderr",
+      "sha256": "9193fddb608b8764e0a6e71e29ba38cc96d9ad732c15f61c5830ac8fa9ee642e",
+      "size": 177
+    }
+  ],
+  "kind": "proc-macro",
+  "name": "phoxal-macros",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "69362d98f34b2757a98fed4a248aa25eff0c40f732c073c729ac8de968d0f9ac",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4120,
+        "path": "Cargo.toml",
+        "sha256": "1a3cd07d883a9ad0f8ad1bc27b6b243fd1173f2376aa231c32298da7f63beae3"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      }
+    ],
+    "subdirectory": "phoxal/macros"
+  },
+  "version": "0.0.0-dev.2"
+}
