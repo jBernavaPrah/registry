@@ -1,0 +1,122 @@
+{
+  "archive": "crates/ph/ox/phoxal-component-zed_f9p/0.0.0-dev.2.crate",
+  "archive_sha256": "0462c02b7dcd3c30c47bdc8594d2fcacf3e8a98136a562ab124437791aafb803",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "2dc1f152e516ab96e7e7db1b7df625180d67b9584b8399022902f608a19f2f25",
+      "size": 106476
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "0fbf13103eccc29ae4cf961d11e711d5ec2a1fb29d1842bdd02b97b019332627",
+      "size": 1963
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "737b04350d231ee24132e85fda103600367549903e42593203edeaa4ab120be6",
+      "size": 988
+    },
+    {
+      "path": "build.rs",
+      "sha256": "0d8593255efcde5cb552c515f263f494dbaa1513cb97a51c7cb778071940b4f9",
+      "size": 173
+    },
+    {
+      "path": "component.yaml",
+      "sha256": "0e757a22f57396e2d9e8d64b902c6b35cb7193f0764a9b926a5693cd3e5309a6",
+      "size": 216
+    },
+    {
+      "path": "model.xml",
+      "sha256": "4a49aaa73aa000e4e146bbca912e8e3ce04d387d9a5d43f48c5fc787770727fb",
+      "size": 421
+    },
+    {
+      "path": "proto/phoxal/component/zed_f9p/v1/zed_f9p.proto",
+      "sha256": "cfbec6d3a7df488ac12cf14eb8d3e268a43e9e8fdf5dd856e82340aa80ea0e06",
+      "size": 399
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "bfdc0365f2b82dd15486f93c28ad93adc12901632c1a7e70a10d2fd454158cc4",
+      "size": 170
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "2893b1594bedb7574668f018a54a0c9ad9b8df3125855df46669df29ed1835f4",
+      "size": 390
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "0c95a2fe01c87c33ab080edfd3e4a9d78dfe6ed466e99250fe4702460027af64",
+      "size": 117
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "80647ee1bdec47e65f746d208ca6b55d91520c42da2bc4bc887c7c1c4a38f50d",
+      "size": 481
+    },
+    {
+      "path": "src/runtime.rs",
+      "sha256": "defc2ebdde1d371c5c08a82fb68db79d48699087944599c5842a43d92652a460",
+      "size": 2594
+    }
+  ],
+  "kind": "component",
+  "name": "phoxal-component-zed_f9p",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "088f3153f88cae1c35a6fa3c63b9faa402a5417b1a72973d8e2296a823c0de72",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4125,
+        "path": "Cargo.toml",
+        "sha256": "cd1c280c0befd9f38cbc92b71027d987ec39a2e32bcdad65203018291621b31f"
+      },
+      {
+        "bytes": 988,
+        "path": "components/zed_f9p/Cargo.toml",
+        "sha256": "737b04350d231ee24132e85fda103600367549903e42593203edeaa4ab120be6"
+      },
+      {
+        "bytes": 7790,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "ccc36399225e3df7daa78843e8f508b994483e98674446392b37264f9fc1a6c7"
+      },
+      {
+        "bytes": 1066,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "03033a2b6c824d5a885134de4ef0f22c64a97ffcb27efcbd13ff8f6b2cb02d81"
+      },
+      {
+        "bytes": 1522,
+        "path": "phoxal/cargo/Cargo.toml",
+        "sha256": "1a99298375d4960ec270aa4e422f3235680b4c13f3c9717457a25dc0c3260622"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      }
+    ],
+    "subdirectory": "components/zed_f9p"
+  },
+  "version": "0.0.0-dev.2"
+}
