@@ -1,0 +1,8 @@
+{
+  "kind": "service",
+  "name": "phoxal-service-kinematics",
+  "owners": [
+    "jBernavaPrah"
+  ],
+  "reserved": true
+}
