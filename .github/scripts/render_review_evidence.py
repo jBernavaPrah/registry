@@ -68,10 +68,10 @@ def previous_archive(base: str, name: str) -> tuple[str, bytes] | None:
     return None
 
 
-def write_tree(root: Path, report: admission.ArchiveReport) -> None:
+def write_tree(root: Path, files: dict[str, bytes]) -> None:
     """Materialize already validated regular archive files for review."""
 
-    for relative, contents in sorted(report.files.items()):
+    for relative, contents in sorted(files.items()):
         destination = root.joinpath(*relative.split("/"))
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes(contents)
@@ -127,16 +127,18 @@ def render(base: str, head: str, output: Path) -> list[Path]:
         previous_root = package / "previous"
         current_root.mkdir(parents=True)
         previous_root.mkdir(parents=True)
-        write_tree(current_root, current)
+        write_tree(current_root, current.files)
 
         prior = previous_archive(base, name)
         previous_version = None
         previous_inventory: list[dict[str, object]] = []
         if prior is not None:
             previous_version, previous_bytes = prior
-            previous = admission.inspect_archive(previous_bytes, name, previous_version)
-            write_tree(previous_root, previous)
-            previous_inventory = previous.inventory
+            previous_files = admission.extract_archive_files(
+                previous_bytes, name, previous_version
+            )
+            write_tree(previous_root, previous_files)
+            previous_inventory = admission.archive_inventory(previous_files)
         write_diff(previous_root, current_root, package / "archive.diff")
         evidence = {
             "name": name,
