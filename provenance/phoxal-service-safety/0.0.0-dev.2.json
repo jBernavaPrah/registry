@@ -1,0 +1,142 @@
+{
+  "archive": "crates/ph/ox/phoxal-service-safety/0.0.0-dev.2.crate",
+  "archive_sha256": "c1fbcae1bcd5bddcd2a6332c14b6145854a2a175ffa3d7bb345a0daf7f9268d2",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "a0fdefe37eb987334608b64bfa66e98e7710f05886534d53a1c0b88197027d87",
+      "size": 107358
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "d5cb398cb497ef3fe94d31b604b2b7ad0f4021a7fb40222fb0e48568ffd5711e",
+      "size": 2595
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "7194ffefe1365368a0125813a5f5441b96e740bff490e4efad48a16109a539cb",
+      "size": 1223
+    },
+    {
+      "path": "build.rs",
+      "sha256": "37a2c57f01fc15ad8396fe0c60b9c942237c16331b5f66647a1f41b1ef663c30",
+      "size": 901
+    },
+    {
+      "path": "lib.rs",
+      "sha256": "ddc96a94ea02cbb87a1e36f7252865970506d0a7957239aab4db67280844c7d4",
+      "size": 5789
+    },
+    {
+      "path": "proto/phoxal/safety/v1/safety.proto",
+      "sha256": "43c8c2bed1cdb2e5b35ebcca508f7d102f595559ad0e322071cc7c2b096ff6c6",
+      "size": 1593
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "fa20b4f4711e7c2184edf4cbe8c984204a8bd4ae2560c2fed049c7365fd8e1b8",
+      "size": 4452
+    },
+    {
+      "path": "src/inputs.rs",
+      "sha256": "7eb4b8ff190dcb3a6d5ed3bc16fea2ccdf7002e708af9cadf1b36259f2c39ff4",
+      "size": 910
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "5f3b844a46c8207f4291b8115f103b322b153ea53809d730b605aba54a3799ce",
+      "size": 129
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "a314195e9edfc5256aee22817a0be8255b51198fdcdda0c098253b125fe5a196",
+      "size": 176
+    },
+    {
+      "path": "src/runtime/assessment.rs",
+      "sha256": "f87e58f9d37f8d9a3ce10dca71b3d8cc2573d960af68c9e5e2f6e1c01b61ec1e",
+      "size": 7445
+    },
+    {
+      "path": "src/runtime/mod.rs",
+      "sha256": "86e685a37c0d8793d5db9962a547d85824947241717b01af37ae9b870d07432d",
+      "size": 5329
+    },
+    {
+      "path": "src/runtime/tests.rs",
+      "sha256": "ccd5ce8e7b49d0ab1e503a093db2ca4b9b8d0b97fedab65e8e77ca5495e2b2db",
+      "size": 11010
+    }
+  ],
+  "kind": "service",
+  "name": "phoxal-service-safety",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "27c4c8fdec9b23df3e0ab5023beea0f0834ed79a513271f1ad8c7484a0baa45e",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4122,
+        "path": "Cargo.toml",
+        "sha256": "913b7f094489ac30989067db56d5790bfb3b2e0f414dd58cd92f52212e49eb8c"
+      },
+      {
+        "bytes": 7790,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "ccc36399225e3df7daa78843e8f508b994483e98674446392b37264f9fc1a6c7"
+      },
+      {
+        "bytes": 1066,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "03033a2b6c824d5a885134de4ef0f22c64a97ffcb27efcbd13ff8f6b2cb02d81"
+      },
+      {
+        "bytes": 1522,
+        "path": "phoxal/cargo/Cargo.toml",
+        "sha256": "1a99298375d4960ec270aa4e422f3235680b4c13f3c9717457a25dc0c3260622"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      },
+      {
+        "bytes": 1050,
+        "path": "services/kinematics/Cargo.toml",
+        "sha256": "9f215331d8658a755f67821f15eaf6fc4e90214d48f00966684293da2c066c04"
+      },
+      {
+        "bytes": 1109,
+        "path": "services/motion/Cargo.toml",
+        "sha256": "30a6003afa24bef2170629b470ba4367325bb0df6f4a48cdf046d8673f1032b6"
+      },
+      {
+        "bytes": 1223,
+        "path": "services/safety/Cargo.toml",
+        "sha256": "7194ffefe1365368a0125813a5f5441b96e740bff490e4efad48a16109a539cb"
+      },
+      {
+        "bytes": 1115,
+        "path": "services/world/Cargo.toml",
+        "sha256": "33940284ea3e713977b596060a5a141db6ea494ad483d6a8821ef5f0bec4e332"
+      }
+    ],
+    "subdirectory": "services/safety"
+  },
+  "version": "0.0.0-dev.2"
+}
