@@ -1,0 +1,8 @@
+{
+  "kind": "service",
+  "name": "phoxal-service-motion",
+  "owners": [
+    "jBernavaPrah"
+  ],
+  "reserved": true
+}

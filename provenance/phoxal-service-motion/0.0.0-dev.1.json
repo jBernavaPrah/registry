@@ -1,0 +1,132 @@
+{
+  "archive": "crates/ph/ox/phoxal-service-motion/0.0.0-dev.1.crate",
+  "archive_sha256": "5ee72e5e1fc04b7cc3fe12c667b5ac5bc868e92790b610dc00ca1f5abfe1b1dd",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "c0d871e18c345b3d61cf25d036c3c302983416b4e874fd0d2bc605feb4c08264",
+      "size": 106788
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "49142491f041c5c4d62b56de8ef80dcb8b82c8cb1ba6e66012888d5944a55bda",
+      "size": 2263
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "1c7346b342e09b789f4ab1bc9b03566566efee25e1a0ab1d284baf332b07350c",
+      "size": 1153
+    },
+    {
+      "path": "README.md",
+      "sha256": "d8f73a25c5862a9b4b30b82506546064b3143b722f49fad6536f6a793157fa97",
+      "size": 1113
+    },
+    {
+      "path": "build.rs",
+      "sha256": "b20334e4d81eb972e1ce2b5c23802a1c9f406ec64096dd3c33284a59e5eaf959",
+      "size": 240
+    },
+    {
+      "path": "lib.rs",
+      "sha256": "455240274c66f99974fdb3582c20d4a8cb2703525fd50099620bd2baab7b4f4a",
+      "size": 19956
+    },
+    {
+      "path": "proto/phoxal/motion/v1/constraints.proto",
+      "sha256": "fe085066387b620585cd7ab47f65190345634e448176d2c04e2f6f93c2ac8e62",
+      "size": 1169
+    },
+    {
+      "path": "proto/phoxal/motion/v1/motion.proto",
+      "sha256": "6b28aec290b42002142ed4fcf72cea1b3105d055ae9a71582d8bf9e01809e850",
+      "size": 2120
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "37b140863ae31971ae7b39ca71a570640eb8d5c1e40928f1a6276b7429495371",
+      "size": 3189
+    },
+    {
+      "path": "src/drive.rs",
+      "sha256": "8104bb02c8a6624bca54d01127ceda5d7a91922324d21b9c0e5b713a1edeea09",
+      "size": 1471
+    },
+    {
+      "path": "src/inputs.rs",
+      "sha256": "1b4f93f11bd42a9e79ebc4672d833ddae882d8c6729721ca0dbd60a36560ba75",
+      "size": 1118
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "e1e1b94c85c26aa0bbe732c9862afa9c43912bac2b870e1fd81da7ccbd941e1f",
+      "size": 140
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "e2072397e69a38c1587ed198e28de951d33219812d481ca8d7ca6e27463fb0f2",
+      "size": 410
+    },
+    {
+      "path": "src/runtime.rs",
+      "sha256": "fe8005dbc6dc5ab1f1f6fe5cec82635c5e7b0f8a944450161f890ccee8cf2157",
+      "size": 32816
+    }
+  ],
+  "kind": "service",
+  "name": "phoxal-service-motion",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "a84814de59bc7b2dd739fcd966da1b724b592a320d92903c171784f8f04dc419",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "dff9d8bb0d0aa4f22d81e982c3bcee859ec6f695",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "868ffc079a06ad2967dffcee5a4aaf8da936611bb9e42d831466e3234beb8412"
+      },
+      {
+        "bytes": 4122,
+        "path": "Cargo.toml",
+        "sha256": "ec13462d0dd4458b1213de8ab7ba36a672bf7b389af45179759360c6794553cb"
+      },
+      {
+        "bytes": 7814,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "d0905ff9ae5a86b1d8850ca471af17143e6df8e37a3ed1e352aac0c2102a55cb"
+      },
+      {
+        "bytes": 1110,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "3c9b409356c978b2df564075cd7153253284686aa056198ee7c8dfcdf6eec5f8"
+      },
+      {
+        "bytes": 1011,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "325efff1217f0f1d10bef3dc49752d78e4b5143db78ed787e4df665258eed67d"
+      },
+      {
+        "bytes": 1094,
+        "path": "services/kinematics/Cargo.toml",
+        "sha256": "1baef842ff69aefaa4812983b2acdabd3c754dc7cd8487b4d06d0a57be4d56e9"
+      },
+      {
+        "bytes": 1153,
+        "path": "services/motion/Cargo.toml",
+        "sha256": "1c7346b342e09b789f4ab1bc9b03566566efee25e1a0ab1d284baf332b07350c"
+      }
+    ],
+    "subdirectory": "services/motion"
+  },
+  "version": "0.0.0-dev.1"
+}
