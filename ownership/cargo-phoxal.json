@@ -1,0 +1,8 @@
+{
+  "kind": "tool",
+  "name": "cargo-phoxal",
+  "owners": [
+    "jBernavaPrah"
+  ],
+  "reserved": true
+}
