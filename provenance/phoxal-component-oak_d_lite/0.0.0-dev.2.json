@@ -1,0 +1,127 @@
+{
+  "archive": "crates/ph/ox/phoxal-component-oak_d_lite/0.0.0-dev.2.crate",
+  "archive_sha256": "fce122d053ebdf38f9ebcb2cb5c0ae2fd4ff3553ffd9c031fb4e3fce11b49ea6",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "956695cb2362a30df3ee24ad7503dea490c884a32ef6d92b04b45d7b6c986a7d",
+      "size": 106479
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "cb8e6fc2805db70b65b57c819ab82dda94e9c3e5cb92c7b8f0367343576d76ec",
+      "size": 1993
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "62218b3e6d90c6673a02b086667f24f2b26123da71bc367ca9da2f54fa2b1d7e",
+      "size": 1012
+    },
+    {
+      "path": "README.md",
+      "sha256": "fb3d225671fc67717e66dd86c39d7fb965aa3ab869613281c70a8f8b898829b1",
+      "size": 783
+    },
+    {
+      "path": "build.rs",
+      "sha256": "1211d17bd46eeee8ab5f4548433038ad47b3640319e40cac6472c8c2919a56c2",
+      "size": 179
+    },
+    {
+      "path": "component.yaml",
+      "sha256": "88bb1ece6809f0862e98906081d40cdbad0888f599e2d9eaa5884a9c17eeb73d",
+      "size": 1503
+    },
+    {
+      "path": "model.xml",
+      "sha256": "b32dd1816607abe7b06a16eed23a314221e5e0c47c3c215296fe615a7e58384b",
+      "size": 1648
+    },
+    {
+      "path": "proto/phoxal/component/oak_d_lite/v1/oak_d_lite.proto",
+      "sha256": "9faeefd725168a5e5c47d317684b324838a8a4540929a5892402c49c1372327c",
+      "size": 1752
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "7025240c041eb7a5568c0c996e60bdc9c9781b5e0cf24ff15c03ffd09e146273",
+      "size": 172
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "4313d4ac4501b1251bbbed99305506f5672d243b0cd2c5eba8fb722842f7c7b2",
+      "size": 409
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "813c955dd0734dc9b2634aa49dcbdfdf9e33b3e94d9c026784ba0747aacceb38",
+      "size": 119
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "978ba00b6a6c2d93887b33f363be815810a885be14e6f3056e3fcd7b218d4b13",
+      "size": 1935
+    },
+    {
+      "path": "src/runtime.rs",
+      "sha256": "4ece906a05974f24517b11cb2e267e037e5a901a731ddeb32771e0f590dbfbfe",
+      "size": 3404
+    }
+  ],
+  "kind": "component",
+  "name": "phoxal-component-oak_d_lite",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "c29751c004a3bdd1bc8dd4ab69acb99da14a2ea4d3dbfe591c2d0430530d0a67",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4128,
+        "path": "Cargo.toml",
+        "sha256": "4f1061c2f0c6eee49ea0038f32b633aac0e024207dab5e7f70215756cdd0d9ec"
+      },
+      {
+        "bytes": 1012,
+        "path": "components/oak_d_lite/Cargo.toml",
+        "sha256": "62218b3e6d90c6673a02b086667f24f2b26123da71bc367ca9da2f54fa2b1d7e"
+      },
+      {
+        "bytes": 7790,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "ccc36399225e3df7daa78843e8f508b994483e98674446392b37264f9fc1a6c7"
+      },
+      {
+        "bytes": 1066,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "03033a2b6c824d5a885134de4ef0f22c64a97ffcb27efcbd13ff8f6b2cb02d81"
+      },
+      {
+        "bytes": 1522,
+        "path": "phoxal/cargo/Cargo.toml",
+        "sha256": "1a99298375d4960ec270aa4e422f3235680b4c13f3c9717457a25dc0c3260622"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      }
+    ],
+    "subdirectory": "components/oak_d_lite"
+  },
+  "version": "0.0.0-dev.2"
+}
