@@ -1,0 +1,8 @@
+{
+  "kind": "application",
+  "name": "phoxal-supervisor",
+  "owners": [
+    "jBernavaPrah"
+  ],
+  "reserved": true
+}
