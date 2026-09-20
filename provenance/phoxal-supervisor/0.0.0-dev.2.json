@@ -1,0 +1,257 @@
+{
+  "archive": "crates/ph/ox/phoxal-supervisor/0.0.0-dev.2.crate",
+  "archive_sha256": "5b0964ac0b11d010c8435a4f262f07c988cc618f951b8539a12c869c80dd22a4",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "79ccbfd9b8d76a85196411e239c0a59b01e2d3b8b297b91ce2d2a58d9330e070",
+      "size": 110990
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "d340b4af0f34fb2940ace711e5f84e6516ebd16318cc3b5e4742c6008cde8567",
+      "size": 3095
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "7a58b43455d62a13cad7c3d2ea5b1a8153f6d7ac1816c44d4c8236713a12fe43",
+      "size": 1936
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "fa0837ff27ad375c1187a04c725f5a1d16ffbabbee6c853319c4ec51ea2f766e",
+      "size": 3152
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "cea5a80234df81ed60273fb4c0f2f8a97a569fb3abf16826d7320b40d656fe22",
+      "size": 2626
+    },
+    {
+      "path": "src/package.rs",
+      "sha256": "69703d07cd6e602a093ab09f6fbd826147aea3cf4f7a785ab3e47e4a17ba8dcd",
+      "size": 334
+    },
+    {
+      "path": "src/rendezvous.rs",
+      "sha256": "78df78ae1330ac57bb5a5cdbd645af7e49b672b38c7bc4aeedede8f2e37cff1b",
+      "size": 8744
+    },
+    {
+      "path": "src/runtime/adapter.rs",
+      "sha256": "7c17695cd8e0a90eee1c58489efecfc096fbcb7014ff607f84ac7cfde48ae212",
+      "size": 78143
+    },
+    {
+      "path": "src/runtime/bundle.rs",
+      "sha256": "29ede9ab31dbe12b3e61a79b14076892c5e5c6688eac7f4349b398cb95629c50",
+      "size": 56324
+    },
+    {
+      "path": "src/runtime/execution.rs",
+      "sha256": "75d03b2ba51e6fcb3e16bc4900a7e02a4bd6b2713f0a81b5fb882f9f0e26a6a7",
+      "size": 134763
+    },
+    {
+      "path": "src/runtime/execution/capacity.rs",
+      "sha256": "a72c549418a4fb9a982394e50a05a16d8baee1a72476da9d1cedca26eb97d671",
+      "size": 11927
+    },
+    {
+      "path": "src/runtime/execution/initialization.rs",
+      "sha256": "0787477c65134e9f1c4cfbee2ca87ff0154dd2eaf32fcd1130f572821e76803e",
+      "size": 3582
+    },
+    {
+      "path": "src/runtime/execution/observation_admission.rs",
+      "sha256": "2922c2306433cba628a5619346a427d06e955530c881f3463c52c5e12745192c",
+      "size": 10157
+    },
+    {
+      "path": "src/runtime/execution/read_views.rs",
+      "sha256": "d4c13935cfdc2d448cec288454a5e9274f3714d5e068a54c82eb7b0bbe48a2c5",
+      "size": 6140
+    },
+    {
+      "path": "src/runtime/execution/trace.rs",
+      "sha256": "7e3321a569044e55362839d19fec7e2989dbd63ad78173c84db1b485d1e03280",
+      "size": 2930
+    },
+    {
+      "path": "src/runtime/lock.rs",
+      "sha256": "5e9830e5020bcc6b0a1f3fcf6d9ff9bdbd0ae7be9a469e168b4888e8cb4102e9",
+      "size": 3286
+    },
+    {
+      "path": "src/runtime/mod.rs",
+      "sha256": "f6e43b4370070b3e76562bd1672a53e5123e44cfcc3f22847a84c63ddb119f1a",
+      "size": 27802
+    },
+    {
+      "path": "src/runtime/process.rs",
+      "sha256": "013979930aa1ace5972e0989c7c868fa9520ae28637b6192a0b54e48c9d8464a",
+      "size": 7882
+    },
+    {
+      "path": "src/runtime/public_backend.rs",
+      "sha256": "c34aafb23c86a83fa1ebeb1e8f23ab8d189384b855ed372ca5586a9bba7cf0d0",
+      "size": 88049
+    },
+    {
+      "path": "src/runtime/router.rs",
+      "sha256": "84f6eb541290a596ef8ceb38ec4d6ca2424debb63bc00b9854e9914fa109a11c",
+      "size": 7065
+    },
+    {
+      "path": "src/runtime/session_table.rs",
+      "sha256": "435518262ab6bbd22ae557137b1b45422ee4be71fa54c1715e75934d7bb5db27",
+      "size": 12359
+    },
+    {
+      "path": "src/runtime/signal.rs",
+      "sha256": "7ea0a0163fdf3cbf8d5887b615c5c62528627de8efe61c509c04631855402243",
+      "size": 3478
+    },
+    {
+      "path": "src/runtime/state.rs",
+      "sha256": "202a4924298db65f41dfc2915cbaa182d55ef8deea43102aeb76414d9550aea7",
+      "size": 5477
+    },
+    {
+      "path": "src/runtime/systemd/mod.rs",
+      "sha256": "392ba6c472bbcc58169ff67222e2531aa524da8d32d42b21c602b78f8e57d03e",
+      "size": 95
+    },
+    {
+      "path": "src/runtime/systemd/notify.rs",
+      "sha256": "d86d947033319b7d4ae90734c1efe59d5ab7726b4c3cdfbae3c52bd493a344d0",
+      "size": 7871
+    },
+    {
+      "path": "src/runtime/transport/mod.rs",
+      "sha256": "0f87e0c23f20b23d185526361e8a1d2822a2edaff4a2ded431858f7e61c467c2",
+      "size": 379
+    },
+    {
+      "path": "src/runtime/transport/server.rs",
+      "sha256": "71c91013a87986e1fbbe0b40a0c2847785097690ae739871afbf14c35afbb7b5",
+      "size": 71021
+    },
+    {
+      "path": "src/runtime/transport/server/tests/support/router.rs",
+      "sha256": "12994b92410f1108e92393249dc5a8d0499cce194315f906540f57a18965d763",
+      "size": 1110
+    },
+    {
+      "path": "src/runtime/transport/simulation/authority.rs",
+      "sha256": "d749a1ac1824ea392b000eda3775184f668c8498253b72bae7dd773ebcfff71b",
+      "size": 30142
+    },
+    {
+      "path": "src/runtime/transport/simulation/mod.rs",
+      "sha256": "c6b756ae961986e8325aa15e84b13406749437679b161f6347a3ffdca7b40b33",
+      "size": 3988
+    },
+    {
+      "path": "src/runtime/transport/simulation/phases.rs",
+      "sha256": "8cfc2e191e1606607f5425727b670b30656587187001d24f45a3cf05b06d1346",
+      "size": 27017
+    },
+    {
+      "path": "src/runtime/transport/simulation/products.rs",
+      "sha256": "b3116fb1811bfaae9eaef75e0ad9711e966c1e5eeda6caf194d457504ab2ac85",
+      "size": 9466
+    },
+    {
+      "path": "src/runtime/transport/simulation/tests.rs",
+      "sha256": "64cb86747d871abe69fd0b016c43473a990577b1ea3121bbb53e5e0c30743004",
+      "size": 20967
+    },
+    {
+      "path": "src/scenario_admission.rs",
+      "sha256": "ba459ff0c5f80e6a250ff6958ef3c3672cc91429c20593410f20e96049a40141",
+      "size": 4831
+    },
+    {
+      "path": "src/transport.rs",
+      "sha256": "2a0384fa80308efa2038316bf5033bbac7414b8e115463079e68c92aeec9710b",
+      "size": 10057
+    },
+    {
+      "path": "tests/fixtures/runtime_process.rs",
+      "sha256": "b44ae11bd1146caafb299479cb9679a338e2247a2c047829e88f41bdd130ed68",
+      "size": 1566
+    },
+    {
+      "path": "tests/public_session.rs",
+      "sha256": "9687f31b5c2f1a841a641b81124e7ba898f4556a3a535b97debfd8306382de2f",
+      "size": 6138
+    },
+    {
+      "path": "tests/runtime_process.rs",
+      "sha256": "c603a6175c226206d5004dd4657c8e28203eda21a2b3e5e442968528847f5f65",
+      "size": 5601
+    },
+    {
+      "path": "tests/support/mod.rs",
+      "sha256": "b311b5e320d49747fa2132cea2f16016d39dbbeeae1d2f1c06599be6fd5a36a5",
+      "size": 1667
+    }
+  ],
+  "kind": "application",
+  "name": "phoxal-supervisor",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "7e21862ca1281f6c1d94732d270121273b6a5a3ac2a27ed563767eda620e1f28",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4117,
+        "path": "Cargo.toml",
+        "sha256": "ef2bcf6f3a47d3655782354b3142ec96f7b6f10f819689270182660da8bbcfcd"
+      },
+      {
+        "bytes": 7790,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "ccc36399225e3df7daa78843e8f508b994483e98674446392b37264f9fc1a6c7"
+      },
+      {
+        "bytes": 1066,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "03033a2b6c824d5a885134de4ef0f22c64a97ffcb27efcbd13ff8f6b2cb02d81"
+      },
+      {
+        "bytes": 1522,
+        "path": "phoxal/cargo/Cargo.toml",
+        "sha256": "1a99298375d4960ec270aa4e422f3235680b4c13f3c9717457a25dc0c3260622"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      },
+      {
+        "bytes": 1936,
+        "path": "supervisor/Cargo.toml",
+        "sha256": "7a58b43455d62a13cad7c3d2ea5b1a8153f6d7ac1816c44d4c8236713a12fe43"
+      }
+    ],
+    "subdirectory": "supervisor"
+  },
+  "version": "0.0.0-dev.2"
+}
