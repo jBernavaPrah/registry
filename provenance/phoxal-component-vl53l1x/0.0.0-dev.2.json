@@ -1,0 +1,127 @@
+{
+  "archive": "crates/ph/ox/phoxal-component-vl53l1x/0.0.0-dev.2.crate",
+  "archive_sha256": "5b7825d19ac19f038976a5d4da4ecad48dc0f87dbbc73f3dd7524eb878fd1823",
+  "assets": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "662ed54b8d3368dff415133312ae36c96a70002e884ad7312f4b3085ee60a7ba",
+      "size": 106476
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "1b1dceaf6e8ee6f5e9ec19c4b5c962859f6360c740735809eadf9298a79d5c08",
+      "size": 2031
+    },
+    {
+      "path": "Cargo.toml.orig",
+      "sha256": "8bd973d201bad8dd200b6510f0efad5869e0745c04e3100f2b47fd6d3aa2f857",
+      "size": 1028
+    },
+    {
+      "path": "README.md",
+      "sha256": "47bcb029665dad431658f6e43de12784abda687e27abeff2b616afa8d4c1c330",
+      "size": 599
+    },
+    {
+      "path": "build.rs",
+      "sha256": "840402f8cf5b031bde709abafdde828aaad12c5c2aea578ecc3d53215640d222",
+      "size": 395
+    },
+    {
+      "path": "component.yaml",
+      "sha256": "15e089f3661db5af6372dda847064b7dcc3ab7dfaf5d5e2c99dfd963d118eff2",
+      "size": 264
+    },
+    {
+      "path": "model.xml",
+      "sha256": "bfe749af6e4a8d3730739cfb726993e4b7345650fc792e99d9b005fa4fe3d335",
+      "size": 517
+    },
+    {
+      "path": "proto/phoxal/component/vl53l1x/v1/vl53l1x.proto",
+      "sha256": "a3e42f5c64578f08a60078560efa48e7302049b5ce839e3ca203d8ffcf9a8f94",
+      "size": 318
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "6cb3bc67945ec26d77cf2aee388647946376f8f9a358ba6878abd9b9019ef202",
+      "size": 171
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "12274d28e559cb87e0e602e9ce309a4dced98ae7d8f2b47c10ca90bef3dc84db",
+      "size": 466
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "193551d5190768b7e2020b5ca715649eebe374644e2684180d03ea2c860345e9",
+      "size": 118
+    },
+    {
+      "path": "src/outputs.rs",
+      "sha256": "f89f4289d98eb3079a9816ee3addb83bae5c4c0ece06b539a61241e9c05e6089",
+      "size": 463
+    },
+    {
+      "path": "src/runtime.rs",
+      "sha256": "b1d26dfe14e7710ec7f4b25f130e7c7965ae1fba0f0601e92a682ae971f26412",
+      "size": 2616
+    }
+  ],
+  "kind": "component",
+  "name": "phoxal-component-vl53l1x",
+  "publisher": "jBernavaPrah",
+  "source": {
+    "derived_files": [],
+    "digest": "1f4c028086ee491dac9dd504516e739bcb8cc8a1d53f1239ca73472108bc87ce",
+    "origin": "git",
+    "path": ".",
+    "preparation": "none",
+    "repository": "https://github.com/phoxal/framework.git",
+    "revision": "0066ef3047155792bd69f0454127f26da2cd5092",
+    "staged_files": [
+      {
+        "bytes": 1733,
+        "path": ".cargo/config.toml",
+        "sha256": "8f20bdda8918920ad6b8ead32a7c774c34adeb646421b50ae04fc651e35ed85a"
+      },
+      {
+        "bytes": 129225,
+        "path": "Cargo.lock",
+        "sha256": "254d84a7f9b7171be677148d64bcf217f31437ef9c50204d7a34f8262feb9559"
+      },
+      {
+        "bytes": 4125,
+        "path": "Cargo.toml",
+        "sha256": "abfcf898e32a641f273cfa1cb486a92d17c4ae39e1a8045a48dc33ea742db552"
+      },
+      {
+        "bytes": 1028,
+        "path": "components/vl53l1x/Cargo.toml",
+        "sha256": "8bd973d201bad8dd200b6510f0efad5869e0745c04e3100f2b47fd6d3aa2f857"
+      },
+      {
+        "bytes": 7790,
+        "path": "phoxal/Cargo.toml",
+        "sha256": "ccc36399225e3df7daa78843e8f508b994483e98674446392b37264f9fc1a6c7"
+      },
+      {
+        "bytes": 1066,
+        "path": "phoxal/build-support/Cargo.toml",
+        "sha256": "03033a2b6c824d5a885134de4ef0f22c64a97ffcb27efcbd13ff8f6b2cb02d81"
+      },
+      {
+        "bytes": 1522,
+        "path": "phoxal/cargo/Cargo.toml",
+        "sha256": "1a99298375d4960ec270aa4e422f3235680b4c13f3c9717457a25dc0c3260622"
+      },
+      {
+        "bytes": 964,
+        "path": "phoxal/macros/Cargo.toml",
+        "sha256": "3d34eb3ff35fcab6f1447f7cf814a3a35a09da9399c74f6372b2ab0fdc1b81b0"
+      }
+    ],
+    "subdirectory": "components/vl53l1x"
+  },
+  "version": "0.0.0-dev.2"
+}
