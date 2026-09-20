@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import json
+import io
 import os
 import subprocess
+import tarfile
 import tempfile
 import unittest
 from pathlib import Path
@@ -90,6 +92,30 @@ class EvidenceTests(unittest.TestCase):
         self.assertIn("+second", diff)
         record = json.loads((package / "evidence.json").read_text())
         self.assertEqual(record["previous_version"], "0.1.0")
+
+    def test_new_version_can_diff_against_legacy_metadata(self) -> None:
+        base = self.publish("0.1.0", b"first\n")
+        archive_path = admission.canonical_archive_path("example-service", "0.1.0")
+        archive = Path(archive_path).read_bytes()
+        files = admission.extract_archive_files(archive, "example-service", "0.1.0")
+        manifest = files["Cargo.toml"].replace(
+            b'\n[package.metadata.phoxal]\nkind = "service"\n', b"\n"
+        )
+        rebuilt = io.BytesIO()
+        with tarfile.open(fileobj=rebuilt, mode="w:gz") as output:
+            for relative, contents in sorted({**files, "Cargo.toml": manifest}.items()):
+                info = tarfile.TarInfo(f"example-service-0.1.0/{relative}")
+                info.size = len(contents)
+                output.addfile(info, io.BytesIO(contents))
+        Path(archive_path).write_bytes(rebuilt.getvalue())
+        self.git("add", archive_path)
+        self.git("commit", "-qm", "make prior archive legacy")
+        base = self.git("rev-parse", "HEAD").stdout.strip()
+
+        head = self.publish("0.2.0", b"second\n")
+        written = evidence.render(base, head, Path("evidence"))
+        package = written[0]
+        self.assertIn("-first", (package / "archive.diff").read_text())
 
 
 if __name__ == "__main__":
